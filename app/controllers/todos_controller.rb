@@ -5,6 +5,7 @@ class TodosController < ApplicationController
   def index
     @todo = Todo.new
     @todos = Todo.all
+    render json: @todos
   end
 
   def create
